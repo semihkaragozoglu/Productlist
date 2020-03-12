@@ -1,0 +1,43 @@
+$textColor: #eee;
+$tablet-width: 768px;
+$desktop-width: 1024px; 
+$color-border: #e8e8e8;
+@import "./mixin-responsive";
+
+body{
+    background: white;
+    font-family:Open Sans;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    font-size:20px;
+}
+.container{
+    @include xxlarge-desktop{
+        width:1530px;
+    }
+    @include xlarge-desktop{
+        width:1170px;
+    }
+    @include large-desktop{
+        width:970px;
+    }
+    @include desktop{
+        width:750px;
+    }
+    @include tablet{
+        width:100%;
+        padding-left:15px;
+        padding-right: 15px;
+    }
+    @include phone{
+        width:100%;
+        padding-left:15px;
+        padding-right: 15px;
+    }
+    margin: 0 auto;
+    
+}
+@import "./list-container";
+@import "./paging";
+@import "./footer";

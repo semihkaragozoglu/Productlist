@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnveon Front-end Case</title>
+    <link rel="stylesheet" href="./assets/custom/css/styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="list-container">
+                <div class="category-list">
+                    <div class="category-group">
+                        <div class="category-title">
+                            Alt Kategoriler
+                        </div>
+                        <div class="wrapper" id="js-categories">
+                            <a href="#" class="category-item">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-content">
+                    <div class="listing-types">
+                        <div class="listing-type-items">
+                            <div class="item">
+                                <div class="type type-threeway" onclick="productHelper.toggleType(2)">
+                                    <div class="row">
+                                        <div class="cell"></div>
+                                        <div class="cell"></div>
+                                        <div class="cell"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="type type-fourway active" onclick="productHelper.toggleType(1)">
+                                    <div class="row">
+                                        <div class="cell"></div>
+                                        <div class="cell"></div>
+                                        <div class="cell"></div>
+                                        <div class="cell"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell"></div>
+                                        <div class="cell"></div>
+                                        <div class="cell"></div>
+                                        <div class="cell"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper type-fourway" id="js-products"> 
+                    </div> 
+                    <div class="paging">
+                        <div class="paging-wrapper">
+                            <div class="page active">1</div>
+                            <div class="page">2</div>
+                            <div class="page">3</div>
+                            <div class="page">4</div>
+                            <div class="page">5</div>
+                            <div class="page">6</div>
+                            <div class="page">7</div>
+                            <div class="page-seperator"></div>
+                            <div class="page">50</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script src="assets/custom/js/products.js"></script>
+    <script src="assets/custom/js/main.js"> </script>
+</body>
+
+</html>

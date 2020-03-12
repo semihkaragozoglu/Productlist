@@ -1,0 +1,44 @@
+.paging {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top:100px;
+    margin-bottom: 20px;;
+    .paging-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        .page {
+            padding: 8px;
+            width: 56px;
+            text-align: center;
+            transition: all 0.7s;
+            margin:7px;
+            cursor:pointer;
+            border-radius: 35px;
+            background:#eee;
+            color:#4d4d4d;
+            font-weight: 600;
+            &.active, &:hover, &:focus{
+                background:#f5680c;
+                color:white;
+            }
+        }
+
+        .page-seperator {
+            width:40px;
+            text-align:center;
+            &:after{
+            content:'...';
+            color:#4d4d4d;
+            font-size:25px;
+            position: relative;
+            top:-6px;
+            }
+        }
+
+    }
+}
